@@ -6,6 +6,8 @@ public class PlayerController : MonoBehaviour {
 
     public float speed;
 
+    public float windSpeed;
+
     private Rigidbody2D rb2d;  
 
     void Start()
