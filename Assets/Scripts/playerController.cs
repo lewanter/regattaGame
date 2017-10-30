@@ -14,10 +14,12 @@ public class PlayerController : MonoBehaviour
     Vector3 myRot;
     //object rotation 
     float angle;
+    private Rigidbody2D rb2d;
 
     // Use this for initialization
     void Start()
     {
+        rb2d = GetComponent<Rigidbody2D>();
         myTrans = transform;
         myPos = myTrans.position;
         myRot = myTrans.rotation.eulerAngles;
