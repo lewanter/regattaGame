@@ -28,12 +28,9 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-
-        //converting the object euler angle's magnitude from to Radians    
+        
         angle = myTrans.eulerAngles.magnitude * Mathf.Deg2Rad;
-
-
-        //rotate object Right & Left
+        
         if (Input.GetKey(KeyCode.RightArrow))
         {
             myRot.z -= rotationSpeed;
