@@ -43,24 +43,16 @@ public class PlayerController : MonoBehaviour
             myRot.z += rotationSpeed;
         }
 
+        myTrans.rotation = Quaternion.Euler(myRot);
+        rb2d.angularVelocity = 0;
+      
 
         //move object Forward & Backward
-        if (Input.GetKey(KeyCode.UpArrow))
+       // if (Input.GetKey(KeyCode.UpArrow))
         {
-
-            myPos.x += (Mathf.Cos(angle) * speed) * Time.deltaTime;
-            myPos.y += (Mathf.Sin(angle) * speed) * Time.deltaTime;
+            float input = Input.GetAxis("Vertical");
+            rb2d.AddForce(gameObject.transform.up * speed * 1);
         }
-        if (Input.GetKey(KeyCode.DownArrow))
-        {
-            myPos.x += Mathf.Cos(angle) * Time.deltaTime;
-            myPos.y += Mathf.Sin(angle) * Time.deltaTime;
-        }
-
-
-        //Apply
-        myTrans.position = myPos;
-        myTrans.rotation = Quaternion.Euler(myRot);
 
     }
 
