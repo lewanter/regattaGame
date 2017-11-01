@@ -6,6 +6,7 @@ public class SailController : MonoBehaviour
 {
 
     public float rotationSpeed;
+    public GameObject player;
     //transform
     Transform myTrans;
     //object rotation
@@ -21,12 +22,15 @@ public class SailController : MonoBehaviour
 
     private void Update()
     {
-        myRot = myTrans.rotation.eulerAngles;
+        
+       // myRot = player.transform.rotation.eulerAngles;
+
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
+        myRot = myTrans.rotation.eulerAngles;
         if (Input.GetKey(KeyCode.UpArrow))
         {
             myRot.z += rotationSpeed;
@@ -42,14 +46,6 @@ public class SailController : MonoBehaviour
 
     void Rotate()
     {
-        if (myRot.z > 66)
-        {
-            myRot.z = 66;
-        }
-        if (myRot.z < 0)
-        {
-            myRot.z = 0;
-        }
         myTrans.rotation = Quaternion.Euler(myRot);
     }
 }

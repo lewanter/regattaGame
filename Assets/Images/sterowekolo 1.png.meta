@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: bce8c881dae0a4043a9e4affdc52b943
-timeCreated: 1509536400
+guid: e87c40f4e37fea84886a4bd1ebfa63f9
+timeCreated: 1509536269
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName: {}
@@ -38,7 +38,7 @@ TextureImporter:
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 9
-  spritePivot: {x: 0.47919267, y: 0.5062422}
+  spritePivot: {x: 0.48880798, y: 0.52059734}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
   alphaUsage: 1
@@ -66,35 +66,10 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
-  - buildTarget: Android
-    maxTextureSize: 2048
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-  - buildTarget: WebGL
-    maxTextureSize: 2048
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
   spriteSheet:
     serializedVersion: 2
     sprites: []
-    outline:
-    - - {x: -22, y: 18}
-      - {x: -22, y: -4}
-      - {x: -18, y: -10}
-      - {x: 144, y: -202}
-      - {x: 168, y: -202}
-      - {x: 168, y: -177}
-      - {x: 156, y: -125}
-      - {x: 124, y: -12}
-      - {x: 50, y: 18}
+    outline: []
   spritePackingTag: 
   userData: 
   assetBundleName: 
