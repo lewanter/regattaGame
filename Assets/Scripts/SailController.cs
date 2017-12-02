@@ -22,8 +22,8 @@ public class SailController : MonoBehaviour
 
     private void Update()
     {
-        
-       // myRot = player.transform.rotation.eulerAngles;
+        Debug.Log("Player z - "+ player.transform.rotation.eulerAngles.z + " Sail z - "+ myRot.z);
+        // myRot = player.transform.rotation.eulerAngles;
 
     }
 
